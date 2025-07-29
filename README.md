@@ -59,11 +59,20 @@ services:
 | Parkour courses          | Parkour                          |
 | Creative plots           | PlotSquared                      |
 | Economy                  | Vault, EssentialsX Economy       |
+| Alternative currency     | PlayerPoints                     |
 | NPC interactions         | Citizens, CommandNPC            |
 | Quests/Tasks             | Quests or custom scripts         |
 | Permissions              | LuckPerms                        |
 
 Currency can be rewarded for catching Pokémon, completing Skyblock quests, finishing Parkour runs and fulfilling humorous Creative objectives. Because all economy plugins rely on Vault, balances are shared between worlds.
+
+## Economy Setup
+
+1. Download the [Vault](https://dev.bukkit.org/projects/vault) and [EssentialsX](https://essentialsx.net/downloads.html) jar files and place them in the `plugins/` folder.
+2. Optionally add [PlayerPoints](https://www.spigotmc.org/resources/playerpoints.80745/) if you want a secondary points-based currency.
+3. Start the server once so the plugins can generate their default configuration files.
+4. Economy data is stored globally, so balances automatically persist between worlds. Use `/eco give <player> <amount>` to reward coins from Pixelmon, Skyblock, Parkour or Creative tasks.
+5. PlayerPoints can be granted with `/points give <player> <amount>` for events that should use the alternate currency.
 
 ## World Setup
 
