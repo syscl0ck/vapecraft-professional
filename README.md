@@ -30,7 +30,7 @@ The compose file mounts the `mods` and `plugins` folders, keeps world data insid
 version: '3.8'
 services:
   minecraft:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:java17
     container_name: vapecraft-server
     ports:
       - "25565:25565"
@@ -38,7 +38,10 @@ services:
       EULA: "TRUE"
       TYPE: "MOHIST"
       VERSION: "1.16.5"
+      MEMORY: "6G"
+      ONLINE_MODE: "TRUE"
       ENABLE_COMMAND_BLOCK: "TRUE"
+      FORCE_GAMEMODE: "TRUE"
     volumes:
       - ./data:/data
       - ./mods:/mods
