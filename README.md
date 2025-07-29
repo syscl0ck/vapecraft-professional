@@ -78,6 +78,34 @@ Currency can be rewarded for catching Pokémon, completing Skyblock quests, fini
 
 Create and load additional worlds using Multiverse-Core. Assign each world a specific game mode (survival, adventure or creative) and manage inventories separately with a plugin such as Multiverse-Inventories if desired. Portals or NPCs can teleport players to the appropriate realm.
 
+## NPC Teleporters
+
+With the Citizens and CommandNPC plugins you can spawn characters that send
+players to your other worlds. Stand in the spawn area and use the commands
+below to create four teleporters. These commands assume your worlds are named
+`Pixelmon`, `Skyblock`, `Parkour` and `Creative` in Multiverse.
+
+```bash
+# Professor Oak -> Pixelmon
+/npc create "Professor Oak" player
+/npc command add -p mv tp <player> Pixelmon
+
+# Skyblock Steve -> Skyblock
+/npc create "Skyblock Steve" player
+/npc command add -p mv tp <player> Skyblock
+
+# Jump Master -> Parkour
+/npc create "Jump Master" player
+/npc command add -p mv tp <player> Parkour
+
+# Creative Carl -> Creative
+/npc create "Creative Carl" player
+/npc command add -p mv tp <player> Creative
+```
+
+The `-p` option ensures the command runs as the clicking player so Multiverse
+permissions still apply.
+
 ## Development
 
 The included `.gitignore` excludes the `data/` directory so your world saves and configuration files remain outside of version control. Mods and plugins can be tracked in this repository so other server operators can reproduce the setup easily.
