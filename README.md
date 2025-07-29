@@ -106,6 +106,46 @@ below to create four teleporters. These commands assume your worlds are named
 The `-p` option ensures the command runs as the clicking player so Multiverse
 permissions still apply.
 
+## Multiverse Portals
+
+You can also link the worlds with walk-through portals created by
+**Multiverse-Portals**. Build each frame at your hub using any block and then
+use the selection wand to define the portal region. The commands below assume
+the worlds are named `Pixelmon`, `Skyblock`, `Parkour` and `Creative`.
+
+```bash
+# Get the portal selection wand and select the two corners of your frame
+/mvp wand
+
+# Pixelmon portal
+/mvp create PixelmonPortal
+/mvp modify dest PixelmonPortal w:Pixelmon
+
+# Skyblock portal
+/mvp create SkyblockPortal
+/mvp modify dest SkyblockPortal w:Skyblock
+
+# Parkour portal
+/mvp create ParkourPortal
+/mvp modify dest ParkourPortal w:Parkour
+
+# Creative portal
+/mvp create CreativePortal
+/mvp modify dest CreativePortal w:Creative
+```
+
+Give players permission to use each portal with a system like LuckPerms. For
+example:
+
+```bash
+/lp group default permission set multiverse.portal.access.PixelmonPortal true
+/lp group default permission set multiverse.portal.access.SkyblockPortal true
+/lp group default permission set multiverse.portal.access.ParkourPortal true
+/lp group default permission set multiverse.portal.access.CreativePortal true
+```
+
+Use `/mv tp <player> <world>` to verify destinations if needed.
+
 ## Development
 
 The included `.gitignore` excludes the `data/` directory so your world saves and configuration files remain outside of version control. Mods and plugins can be tracked in this repository so other server operators can reproduce the setup easily.
