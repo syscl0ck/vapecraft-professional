@@ -1,0 +1,25 @@
+# 1. Pixelmon world (flat terrain)
+mv create Pixelmon NORMAL -t FLAT
+
+# 2. Skyblock world using BentoBox’s generator
+mv create Skyblock NORMAL -g BSkyBlock
+
+# 3. Parkour world (normal terrain)
+mv create Parkour NORMAL
+
+# 4. Creative world (flat terrain)
+mv create Creative NORMAL -t FLAT
+
+# Pixelmon and Skyblock in Survival
+mv modify set mode SURVIVAL Pixelmon
+mv modify set mode SURVIVAL Skyblock
+
+# Parkour in Adventure
+mv modify set mode ADVENTURE Parkour
+
+# Creative world in Creative mode
+mv modify set mode CREATIVE Creative
+
+mv conf firstspawnworld Pixelmon
+# (Optionally set the actual spawn point in that world)
+mv setspawn
