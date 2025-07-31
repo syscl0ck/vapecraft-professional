@@ -5,41 +5,43 @@
 set -e
 
 # Multiverse-Core (example version 4.3.2)
-curl -o Multiverse-Core.jar -L https://github.com/Multiverse/Multiverse-Core/releases/download/v4.3.2/Multiverse-Core-4.3.2.jar
+curl -L https://github.com/Multiverse/Multiverse-Core/releases/download/5.1.2/multiverse-core-5.1.2.jar
 
 # Multiverse-Portals
-curl -o Multiverse-Portals.jar -L https://github.com/Multiverse/Multiverse-Portals/releases/download/v4.2.1/Multiverse-Portals-4.2.1.jar
+curl -L https://github.com/Multiverse/Multiverse-Portals/releases/download/5.1.0/multiverse-portals-5.1.0.jar
 
 # Vault
-curl -o Vault.jar -L https://github.com/MilkBowl/Vault/releases/latest/download/Vault.jar
+curl -o Vault-1.7.3.jar -L https://github.com/MilkBowl/Vault/releases/download/1.7.3/Vault.jar
 
 # EssentialsX (base jar)
-curl -o EssentialsX.jar -L https://github.com/EssentialsX/Essentials/releases/latest/download/EssentialsX.jar
+curl -L https://github.com/EssentialsX/Essentials/releases/download/2.21.1/EssentialsX-2.21.1.jar
 
 # LuckPerms
-curl -o LuckPerms.jar -L https://download.luckperms.net/1535/bukkit/loader/LuckPerms-Bukkit-5.4.128.jar
+curl -L https://download.luckperms.net/1595/bukkit/loader/LuckPerms-Bukkit-5.5.10.jar
 
 # Citizens
-curl -o Citizens.jar -L https://github.com/CitizensDev/Citizens2/releases/latest/download/Citizens.jar
+curl -L https://ci.citizensnpcs.co/job/Citizens2/3866/artifact/dist/target/Citizens-2.0.39-b3866.jar
 
 # CommandNPC
-curl -o CommandNPC.jar -L https://github.com/CitizensDev/CommandNPC/releases/latest/download/CommandNPC.jar
+# TODO: confirm if this plugin is still supported
+#curl -o CommandNPC.jar -L https://github.com/CitizensDev/CommandNPC/releases/latest/download/CommandNPC.jar
 
 # Quests
-curl -o Quests.jar -L https://github.com/PikaMug/Quests/releases/latest/download/Quests.jar
+curl -o Quests-6782459.jar -L https://www.curseforge.com/minecraft/bukkit-plugins/quests/download/6782459
 
 # PlayerPoints
-curl -o PlayerPoints.jar -L https://github.com/PlayerPoints/PlayerPoints/releases/latest/download/PlayerPoints.jar
+curl -o PlayerPoints-586064.jar -L https://www.spigotmc.org/resources/playerpoints.80745/download?version=586064
 
 # Parkour
-curl -o Parkour.jar -L https://github.com/A5H73Y/Parkour/releases/latest/download/Parkour.jar
+curl -L https://github.com/A5H73Y/Parkour/releases/download/Parkour-7.2.5-RELEASE.128/Parkour-7.2.5-RELEASE.jar
 
 # PlotSquared
-curl -o PlotSquared.jar -L https://github.com/IntellectualSites/PlotSquared/releases/latest/download/PlotSquared-Bukkit.jar
+# TODO: Find reputable download or compile from source
+# curl -o PlotSquared.jar -L https://github.com/IntellectualSites/PlotSquared/releases/latest/download/PlotSquared-Bukkit.jar
 
 # BentoBox
-curl -o BentoBox.jar -L https://github.com/BentoBoxWorld/BentoBox/releases/latest/download/BentoBox.jar
+curl -L https://github.com/BentoBoxWorld/BentoBox/releases/download/3.7.1/BentoBox-3.7.1.jar
 
 # BSkyBlock addon
-curl -o BSkyBlock.jar -L https://github.com/BentoBoxWorld/addon-bskyblock/releases/latest/download/BSkyBlock.jar
+curl -L https://github.com/BentoBoxWorld/BSkyBlock/releases/download/1.90.0/BSkyBlock-1.19.0.jar
 
